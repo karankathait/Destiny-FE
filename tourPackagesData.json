@@ -1,0 +1,72 @@
+{
+  "packages": [
+    {
+      "id": 1,
+      "title": "City Explorer",
+      "price": 500,
+      "location": "City",
+      "person": 1,
+      "rating": 4.5,
+      "days": 3,
+      "nights": 2,
+      "images": [
+        "city1.jpg",
+        "city2.jpg",
+        "city3.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Beach Paradise",
+      "price": 800,
+      "location": "Beach",
+      "person": 2,
+      "rating": 5,
+      "days": 5,
+      "nights": 4,
+      "images": [
+        "beach1.jpg",
+        "beach2.jpg",
+        "beach3.jpg"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Mountain Retreat",
+      "price": 1200,
+      "location": "Mountain",
+      "person": 1,
+      "rating": 4,
+      "days": 7,
+      "nights": 6,
+      "images": [
+        "mountain1.jpg",
+        "mountain2.jpg",
+        "mountain3.jpg"
+      ]
+    },
+    {
+      "id": "bc76",
+      "title": "Spiti Valley",
+      "price": 14000,
+      "person": 2
+    }
+  ],
+  "popularPackages": [
+    {
+      "id": 3,
+      "title": "River View",
+      "price": 1200,
+      "location": "RiverSide",
+      "person": 1,
+      "rating": 4,
+      "days": 7,
+      "nights": 6,
+      "images": [
+        "mountain1.jpg",
+        "mountain2.jpg",
+        "mountain3.jpg"
+      ]
+    }
+  ]
+}
