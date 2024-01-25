@@ -62,7 +62,7 @@ const PackagesPosters = () => {
       <div className="w-11/12 overflow-hidden rounded-2xl relative">
         <Slider {...settings} ref={sliderRef}>
         {images.map((imageUrl, index) => {
-        console.log(imageUrl); // Log the imageUrl
+        // console.log(imageUrl); // Log the imageUrl
         return (
             <div key={index} className="w-full h-72 md:h-auto flex items-center justify-center">
             <img

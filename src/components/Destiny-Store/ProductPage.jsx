@@ -1,6 +1,6 @@
 import React from 'react'
 
-const cards = () => {
+const ProductPage = () => {
   return (
     <div>
         <div className="bg-white">
@@ -152,4 +152,4 @@ const cards = () => {
   )
 }
 
-export default cards
+export default ProductPage;
