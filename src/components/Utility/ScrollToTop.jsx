@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import { TiArrowUpThick } from "react-icons/ti";
 
 const ScrollToTopButton = () => {
@@ -14,30 +14,34 @@ const ScrollToTopButton = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       // Remove the event listener to avoid memory leaks
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
   return (
-    <button
-      className={`${
-        isVisible ? 'block' : 'hidden'
-      } z-20 fixed bottom-4 right-4 bg-[#FF9933] hover:bg-[#63AB45] duration-300 text-white p-4 rounded-full focus:outline-none`}
-      onClick={scrollToTop}
-    >
-      <TiArrowUpThick />
-    </button>
+    <div className="w-full flex justify-center">
+      <div className="w-10/12 bg-gray-400">
+        <button
+          className={`${
+            isVisible ? "block" : "hidden"
+          } z-20 fixed bottom-4 right-4 bg-[#FF9933] hover:bg-[#63AB45] duration-300 text-white p-4 rounded-full focus:outline-none`}
+          onClick={scrollToTop}
+        >
+          <TiArrowUpThick />
+        </button>
+      </div>
+    </div>
   );
 };
 

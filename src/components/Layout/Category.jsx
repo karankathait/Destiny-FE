@@ -26,7 +26,7 @@ const BrowseByCategory = () => {
                 <div key={index} className="rounded overflow-hidden">
                 <div className="h-20 w-20 mx-auto mt-4 bg-gray-300 rounded-full">
                     <img
-                    src={tour.image}
+                    src={tour.image.src}
                     alt={tour.title}
                     className="w-full h-full object-cover rounded-full"
                     />

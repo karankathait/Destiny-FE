@@ -16,7 +16,7 @@ const AboutUsPoster2 = () => {
           <h1 className=" text-3xl lg:text-4xl text-[#222222] font-extrabold">
             Planning a trip should be very exciting adventure
           </h1>
-          <p className="py-6 text-lg text-slate-700">
+          <p className="py-6 text-lg text-slate-500">
             We're dedicated to offering exceptional value for your travel
             investment. Our relationships with trusted travel partners
           </p>
@@ -28,7 +28,7 @@ const AboutUsPoster2 = () => {
               <h1 className="text-2xl text-[#FF9933] font-bold py-2">
                 International Tours
               </h1>
-              <p className="text-slate-600">
+              <p className="text-slate-500">
                 Our team of travel professional brings a wealth of knowledge and
                 expertise to the table.
               </p>
@@ -42,8 +42,8 @@ const AboutUsPoster2 = () => {
               <h1 className="text-2xl text-[#FF9933] font-bold py-2">
                 Multiple Options to Choose
               </h1>
-              <p className="text-slate-600">
-                OPlanning trip should be an exciting adventure, not stressful
+              <p className="text-slate-500">
+                Planning trip should be an exciting adventure, not stressful
                 ordeal. Let us handle the logistics
               </p>
             </div>

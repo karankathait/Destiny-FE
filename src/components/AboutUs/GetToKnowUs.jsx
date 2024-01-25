@@ -19,7 +19,7 @@ const GetToKnowUs = () => {
             Company
           </p>
           </div>
-          <p className="w-10/12 text-[#555555] leading-8 py-4">
+          <p className="text-lg w-full lg:w-10/12 text-[#555555] leading-8 py-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             egestas, neque ut hendrerit egestas, lorem velit venenatis urna,
             vitae consequat enim purus tincidunt urna. Maecenas sollicitudin mi

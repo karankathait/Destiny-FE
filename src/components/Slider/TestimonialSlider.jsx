@@ -86,7 +86,7 @@ const TestimonialsSlider = () => {
 
   return (
     <div className="w-full flex justify-center bg-[#F8FAFC] py-10">
-      <div className="bg-white w-full lg:w-6/12 py-8 px-6 shadow-2xl rounded-lg">
+      <div className="bg-white w-full lg:w-6/12 py-8 px-6 shadow-lg rounded-lg">
         <div className="text-center">
           <p className="text-lg font-semibold py-1">
             <span className="pl-12 bg-[#FF9933]">Testimo</span>nials

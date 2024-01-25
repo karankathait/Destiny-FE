@@ -33,7 +33,7 @@ const AboutUsPoster1 = () => {
             <br /> Planners
             <br /> for your Vacations
           </h1>
-          <p className="py-6 text-lg text-slate-700">
+          <p className="py-7 text-lg text-slate-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             egestas, neque ut hendrerit egestas, lorem velit venenatis urna,
             vitae consequat enim purus tincidunt urna. Maecenas sollicitudin mi

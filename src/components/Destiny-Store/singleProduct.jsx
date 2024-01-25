@@ -1,6 +1,6 @@
 import React from 'react'
 
-const singleProduct = () => {
+const SingleProduct = () => {
   return (
     <div>
       <div className="relative z-10" role="dialog" aria-modal="true">
@@ -167,4 +167,4 @@ const singleProduct = () => {
   )
 }
 
-export default singleProduct
+export default SingleProduct
