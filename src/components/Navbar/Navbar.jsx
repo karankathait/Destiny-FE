@@ -79,21 +79,23 @@ const Navbar = () => {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
-                <span className="text-3xl font-bold"><span className="text-orange-500">D</span>estiny</span>
+                <span className="text-3xl font-bold">
+                  <span className="text-orange-500">D</span>estiny
+                </span>
                 {/* <img
                   className="h-8 w-auto"
                   src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
                   alt="Your Company"
                 /> */}
               </div>
-              <div className="hidden sm:ml-6 sm:block">
+              <div className="hidden pl-44 sm:ml-6 sm:block">
                 <div className="flex space-x-4">
                   <Link
                     href="/"
                     className={`${
                       router.pathname === "/"
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                        ? "bg-[#FF9933] text-white"
+                        : "text-gray-800 hover:bg-gray-700 hover:text-white"
                     } rounded-md px-3 py-2 text-sm font-medium`}
                     aria-current={router.pathname === "/" ? "page" : undefined}
                   >
@@ -103,18 +105,28 @@ const Navbar = () => {
                     href="/about-us"
                     className={`${
                       router.pathname === "/about-us"
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                        ? "bg-[#FF9933] text-white"
+                        : "text-gray-800 hover:bg-gray-700 hover:text-white"
                     } rounded-md px-3 py-2 text-sm font-medium`}
                   >
                     About Us
                   </Link>
                   <Link
+                    href="/our-services"
+                    className={`${
+                      router.pathname === "/our-services"
+                        ? "bg-[#FF9933] text-white"
+                        : "text-gray-800 hover:bg-gray-700 hover:text-white"
+                    } rounded-md px-3 py-2 text-sm font-medium`}
+                  >
+                    Services
+                  </Link>
+                  <Link
                     href="#"
                     className={`${
                       router.pathname === "/projects"
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                        ? "bg-[#FF9933] text-white"
+                        : "text-gray-800 hover:bg-gray-700 hover:text-white"
                     } rounded-md px-3 py-2 text-sm font-medium`}
                   >
                     Projects
@@ -123,8 +135,8 @@ const Navbar = () => {
                     href="/contact-us"
                     className={`${
                       router.pathname === "/contact-us"
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                        ? "bg-[#FF9933] text-white"
+                        : "text-gray-800 hover:bg-gray-700 hover:text-white"
                     } rounded-md px-3 py-2 text-sm font-medium`}
                   >
                     Contact Us
@@ -133,8 +145,8 @@ const Navbar = () => {
                     href="/destiny-store"
                     className={`${
                       router.pathname === "/destiny-store"
-                        ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                        ? "bg-[#FF9933] text-white"
+                        : "text-gray-800 hover:bg-gray-700 hover:text-white"
                     } rounded-md px-3 py-2 text-sm font-medium`}
                   >
                     Shop
@@ -262,29 +274,56 @@ const Navbar = () => {
                 </div>
                 <div className="space-y-1 px-2 pb-3 pt-2">
                   <Link
-                    href="#"
-                    className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-                    aria-current="page"
+                    href="/"
+                    className={`${
+                      router.pathname === "/"
+                        ? "bg-[#FF9933] text-white"
+                        : "bg-gray-100 text-gray-800 hover:bg-gray-700 hover:text-white"
+                    } block rounded-md px-3 py-2 text-base font-medium`}
+                    aria-current={router.pathname === "/" ? "page" : undefined}
                   >
-                    Dashboard
+                    Home
                   </Link>
                   <Link
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                    href="/about-us"
+                    className={`${
+                      router.pathname === "/about-us"
+                        ? "bg-[#FF9933] text-white"
+                        : "bg-gray-100 text-gray-800 hover:bg-gray-700 hover:text-white"
+                    } block rounded-md px-3 py-2 text-base font-medium`}
+                    aria-current={router.pathname === "/about-us" ? "page" : undefined}
                   >
-                    Team
+                    About Us
                   </Link>
                   <Link
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                    href="/our-services"
+                    className={`${
+                      router.pathname === "/our-services"
+                        ? "bg-[#FF9933] text-white"
+                        : "bg-gray-100 text-gray-800 hover:bg-gray-700 hover:text-white"
+                    } block rounded-md px-3 py-2 text-base font-medium`}
                   >
-                    Projects
+                    Services
                   </Link>
                   <Link
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
+                    href="/contact-us"
+                    className={`${
+                      router.pathname === "/contact-us"
+                        ? "bg-[#FF9933] text-white"
+                        : "bg-gray-100 text-gray-800 hover:bg-gray-700 hover:text-white"
+                    } block rounded-md px-3 py-2 text-base font-medium`}
                   >
-                    Calendar
+                    Contact Us
+                  </Link>
+                  <Link
+                    href="/destiny-store"
+                    className={`${
+                      router.pathname === "/destiny-store"
+                        ? "bg-[#FF9933] text-white"
+                        : "bg-gray-100 text-gray-800 hover:bg-gray-700 hover:text-white"
+                    } block rounded-md px-3 py-2 text-base font-medium`}
+                  >
+                    Shop
                   </Link>
                 </div>
               </div>

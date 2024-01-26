@@ -15,7 +15,7 @@ const toursData = [
   ];
 const BrowseByCategory = () => {
   return (
-    <div className='w-full flex justify-center bg-slate-50 py-20'>
+    <div className='w-full flex justify-center bg-slate-50 py-10'>
         <div className='w-10/12 text-center'>
             <div>
                 <p className='text-lg font-semibold py-1'><span className='pl-12 pr-2 bg-[#FF9933]'>Browse</span> By Category</p>

@@ -12,26 +12,30 @@ import ScrollToTopButton from '@/components/Utility/ScrollToTop'
 import Navbar from '@/components/Navbar/Navbar'
 import Footer from '@/components/Footer/footer'
 import PopularDestination from '@/components/Layout/PopularDestination'
+import HomeScreen from '@/components/Slider/HomeScreenSlider'
+import TourTypesSlider from '@/components/Slider/TourTypesSlider'
 
 export default function Home() {
    console.log('here ')
   return (
-    <main>
-       <div className=''>
+    <>
+       
           {/* <h1 className='text-red-500 text-5xl bg-gray-500'>Home Page</h1> */}
           <Navbar />
+          <HomeScreen />
           <BrowseByCategory />
           <PackagesPosters />
-          <OurServices />
+          <TourTypesSlider />
+          {/* <OurServices /> */}
           <PopularPackages />
           <LatestNews />
           <TestimonialsSlider />
           <PopularDestination />
           <Footer />
-          <ScrollToTopButton />
+          {/* <ScrollToTopButton /> */}
           {/* <Navigation /> */}
           {/* <SingleProduct /> */}
-       </div>
-    </main>
+       
+    </>
   )
 }

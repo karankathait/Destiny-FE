@@ -4,13 +4,15 @@ import Footer from '@/components/Footer/footer'
 import Navbar from '@/components/Navbar/Navbar'
 import SingleProduct from '@/components/Destiny-Store/SingleProduct'
 import React from 'react'
+import CategoryPage from '@/components/Destiny-Store/CategoryPage'
 
 const index = () => {
   return (
     <div>
         <Navbar />
-        <ProductPage />
-        <ProductOverview />
+        <CategoryPage />
+        {/* <ProductPage /> */}
+        {/* <ProductOverview /> */}
         <Footer />
         {/* <SingleProduct /> */}
     </div>

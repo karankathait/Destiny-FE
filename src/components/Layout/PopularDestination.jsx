@@ -115,12 +115,12 @@ const PopularDestination = () => {
         <div className="py-8">
           {/* Navigation buttons */}
 
-          <Slider ref={sliderRef} {...settings} >
+          <Slider ref={sliderRef} {...settings}>
             {slides.map((data, index) => {
               return (
                 <div
                   key={index}
-                  className="rounded overflow-hidden min-h-[480px] max-h-[520px] shadow-sm bg-white "
+                  className="rounded overflow-hidden min-h-[480px] max-h-[520px] shadow-sm bg-white px-2"
                 >
                   <div className="relative">
                     <img
@@ -129,24 +129,33 @@ const PopularDestination = () => {
                       alt={`popular destination ${data.title}`}
                     />
                     <div className="absolute top-10 right-10 text-lg font-bold">
-                      <span className="text-white text-2xl font-bold"><span className="text-orange-400">$</span>{data.price}</span>
+                      <span className="text-white text-2xl font-bold">
+                        <span className="text-orange-400">$</span>
+                        {data.price}
+                      </span>
                     </div>
                   </div>
                   <div className="py-8 text-start">
-                    <div className="rounded text-[#7EB966]"><p className="w-2/4 px-1 rounded bg-[#F3F7F6]">{data.location}</p></div>
-                    <p className="text-[#222222] text-xl py-4 font-bold">{data.title}</p>
+                    <div className="rounded text-[#7EB966]">
+                      <p className="w-2/4 px-1 rounded bg-[#F3F7F6]">
+                        {data.location}
+                      </p>
+                    </div>
+                    <p className="text-[#222222] text-xl py-4 font-bold">
+                      {data.title}
+                    </p>
                     <p className="flex gap-3">
                       <span className="flex items-center gap-2 text-slate-500">
-                        <FaRegClock className="text-[#FF9933]"/>
+                        <FaRegClock className="text-[#FF9933]" />
                         {data.duration}
                       </span>
                       <span className="flex items-center gap-2 text-slate-500">
-                        <IoMdPerson className="text-[#FF9933]"/>
+                        <IoMdPerson className="text-[#FF9933]" />
                         {data.peoples}
                       </span>
                     </p>
                     <p className="flex items-center gap-2 text-slate-500">
-                      <FaRegStar className="text-[#FF9933]"/>
+                      <FaRegStar className="text-[#FF9933]" />
                       {data.rating}
                     </p>
                   </div>

@@ -13,7 +13,7 @@ const index = () => {
         <Navbar />
         <AboutUsHeader />
         <AboutUsPoster1 />
-        <GetToKnowUs />
+        {/* <GetToKnowUs /> */}
         <AboutUsPoster2 />
         <ScrollToTopButton />
         <Footer />
