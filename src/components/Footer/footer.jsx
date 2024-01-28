@@ -12,7 +12,7 @@ const Footer = () => {
         style={{ backgroundImage: `url(${destinyImage.src})` }}
       ></div>
 
-        <div className='w-10/12 py-16'>
+        <div className='w-10/12 lg:w-11/12 py-16'>
             <div className='flex flex-col gap-8 lg:flex-row justify-between'>
                 <div className='w-full lg:w-2/6 text-white text-lg'>
                     <h1 className='text-3xl font-bold pb-4'><span className='text-[#FF9933]'>D</span>estiny.</h1>
@@ -38,7 +38,7 @@ const Footer = () => {
                   <p className='pb-2'>Tour Guid</p>
                   <p className='pb-2'>Contact us</p>
                 </div>
-                <div className='wfull lg:w-1/6 text-white'>
+                <div className='wfull lg:w-2/6 text-white'>
                   <h1 className='text-2xl font-bold pb-4'>Newsletter</h1>
                   <div className='flex items-center relative pb-4'><input type='email' className='w-full py-3 p-4 rounded-3xl outline-none target:outline-blue-600' placeholder='Enter Your Email'></input><button className='absolute right-2 bg-[#FF9933] p-3 rounded-full text-white hover:bg-[#63AB45] duration-300'><BsSend /></button></div>
                   <p className='leading-7'>By subscribing to our mailing list you will always be updated</p>

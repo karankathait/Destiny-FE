@@ -25,7 +25,7 @@ const GetToKnowUs = () => {
             vitae consequat enim purus tincidunt urna. Maecenas sollicitudin mi
             id odio lacinia feugiat
           </p>
-          <div className="grid grid-cols-2 py-8">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 pb-3">
             <div className="flex items-center gap-5">
               <div className="bg-[#FF9933] p-4 rounded-full">
                 <FaPersonWalkingLuggage className="text-white w-5 h-5" />
@@ -45,7 +45,7 @@ const GetToKnowUs = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 pt-3">
             <div className="flex items-center gap-5">
               <div className="bg-[#FF9933] p-4 rounded-full">
                 <LuMessagesSquare className="text-white w-5 h-5" />

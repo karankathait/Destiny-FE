@@ -1,22 +1,36 @@
-import ProductOverview from '@/components/Destiny-Store/ProductOverview'
-import ProductPage from '@/components/Destiny-Store/ProductPage'
-import Footer from '@/components/Footer/footer'
-import Navbar from '@/components/Navbar/Navbar'
-import SingleProduct from '@/components/Destiny-Store/SingleProduct'
-import React from 'react'
-import CategoryPage from '@/components/Destiny-Store/CategoryPage'
+import Footer from '@/components/Footer/footer';
+import Navbar from '@/components/Navbar/Navbar';
+import React, { useState, useEffect } from 'react';
+import CategoryPage from '@/components/Destiny-Store/CategoryPage';
+import Loading from '@/components/Loading'
 
-const index = () => {
+const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchData = async () => {
+
+      setTimeout(() => {
+        setIsLoading(false);
+      }, 1000); 
+    };
+
+    fetchData();
+  }, []); 
+
   return (
     <div>
-        <Navbar />
-        <CategoryPage />
-        {/* <ProductPage /> */}
-        {/* <ProductOverview /> */}
-        <Footer />
-        {/* <SingleProduct /> */}
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <>
+          <Navbar />
+          <CategoryPage />
+          <Footer />
+        </>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default Index;

@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import profile from "@/images/profile.jpg";
 import { useRouter } from "next/router";
-console.log("profile : ", profile);
+// console.log("profile : ", profile);
 const Navbar = () => {
   const [showProfile, setShowProfile] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -122,14 +122,14 @@ const Navbar = () => {
                     Services
                   </Link>
                   <Link
-                    href="#"
+                    href="/holidays"
                     className={`${
-                      router.pathname === "/projects"
+                      router.pathname === "/holidays"
                         ? "bg-[#FF9933] text-white"
                         : "text-gray-800 hover:bg-gray-700 hover:text-white"
                     } rounded-md px-3 py-2 text-sm font-medium`}
                   >
-                    Projects
+                    Holidays
                   </Link>
                   <Link
                     href="/contact-us"
@@ -249,7 +249,8 @@ const Navbar = () => {
           {showMobileMenu && (
             <div className="fixed inset-0 bg-black bg-opacity-50 z-40">
               <div className="relative max-w-xs w-full bg-white h-full overflow-y-auto">
-                <div className="flex justify-end p-4">
+                <div className="flex justify-between p-4">
+                  <div className="text-4xl font-bold"><span className="text-orange-500">D</span>estiny</div>
                   <button
                     type="button"
                     className="text-gray-600 hover:text-gray-800"

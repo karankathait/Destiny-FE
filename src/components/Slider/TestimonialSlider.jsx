@@ -89,9 +89,9 @@ const TestimonialsSlider = () => {
       <div className="bg-white w-full lg:w-6/12 py-8 px-6 shadow-lg rounded-lg">
         <div className="text-center">
           <p className="text-lg font-semibold py-1">
-            <span className="pl-12 bg-[#FF9933]">Testimo</span>nials
+            <span className="pl-12 text-[#222222] bg-[#FF9933]">Testimo</span>nials
           </p>
-          <p className="text-3xl lg:text-4xl font-bold py-1 mb-6">
+          <p className="palanquin-dark-medium text-[#222222] text-3xl lg:text-4xl font-bold py-1">
             What Saying our Happy <br /> Customers
           </p>
         </div>

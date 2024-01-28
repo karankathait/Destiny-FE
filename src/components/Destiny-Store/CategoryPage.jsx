@@ -27,7 +27,7 @@ const CategoryPage = () => {
   };
 
   return (
-    <div className="m-8">
+    <div className="mt-12">
       <div className="relative mb-8">
         <div
           className="absolute bottom-0 w-full h-px bg-slate-300"

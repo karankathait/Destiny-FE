@@ -14,28 +14,43 @@ import Footer from '@/components/Footer/footer'
 import PopularDestination from '@/components/Layout/PopularDestination'
 import HomeScreen from '@/components/Slider/HomeScreenSlider'
 import TourTypesSlider from '@/components/Slider/TourTypesSlider'
+import Loading from '@/components/Loading'
+import { useEffect, useState } from 'react'
 
 export default function Home() {
-   console.log('here ')
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const delay = setTimeout(() => {
+      setIsLoading(false);
+    }, 1000);
+
+    return () => clearTimeout(delay);
+  }, []);
+
   return (
-    <>
-       
-          {/* <h1 className='text-red-500 text-5xl bg-gray-500'>Home Page</h1> */}
+    <div className='w-full'>
+      {isLoading ? (
+        <Loading />
+      ) : (
+        <div>
           <Navbar />
           <HomeScreen />
           <BrowseByCategory />
           <PackagesPosters />
           <TourTypesSlider />
-          {/* <OurServices /> */}
           <PopularPackages />
-          <LatestNews />
-          <TestimonialsSlider />
+
+          {/* <LatestNews /> */}
+
           <PopularDestination />
+          <TestimonialsSlider />
           <Footer />
-          {/* <ScrollToTopButton /> */}
+          <ScrollToTopButton />
           {/* <Navigation /> */}
           {/* <SingleProduct /> */}
-       
-    </>
-  )
+        </div>
+      )}
+    </div>
+  );
 }

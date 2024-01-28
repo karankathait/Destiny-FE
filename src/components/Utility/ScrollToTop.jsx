@@ -31,7 +31,7 @@ const ScrollToTopButton = () => {
 
   return (
     <div className="w-full flex justify-center">
-      <div className="w-10/12 bg-gray-400">
+      <div className="w-10/12 lg:w-11/12 bg-gray-400">
         <button
           className={`${
             isVisible ? "block" : "hidden"

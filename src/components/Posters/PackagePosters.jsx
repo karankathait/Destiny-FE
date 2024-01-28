@@ -19,13 +19,10 @@ const PackagesPosters = () => {
 
     const sliderRef = useRef(null);
     const handleNext = (e) => {
-      console.log('Button clicked!');
       sliderRef.current.slickNext();
     };
   
-    const handlePrev = (e) => {
-      console.log('Button clicked!');
-  
+    const handlePrev = (e) => {  
       sliderRef.current.slickPrev();
     };
       

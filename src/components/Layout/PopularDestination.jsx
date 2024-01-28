@@ -105,11 +105,11 @@ const PopularDestination = () => {
 
   return (
     <div className="w-full flex justify-center bg-fuchsia-50 pt-16">
-      <div className="w-10/12 text-center">
+      <div className="w-11/12 text-center">
         <p className="text-lg font-semibold py-1">
-          <span className="pl-12 pr-2 bg-[#FF9933]">Popular</span> Destination
+          <span className="pl-12 pr-2 text-[#222222] bg-[#FF9933]">Popular</span> Destination
         </p>
-        <p className="text-3xl lg:text-4xl font-bold py-1">
+        <p className="palanquin-dark-medium text-[#222222] text-3xl lg:text-4xl font-bold py-1">
           Travel Most Popular Place <br></br>In The World
         </p>
         <div className="py-8">

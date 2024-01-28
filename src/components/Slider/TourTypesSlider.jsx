@@ -94,12 +94,12 @@ const TourTypesSlider = () => {
 
   return (
     <div className="w-full flex justify-center py-14">
-      <div className="w-10/12">
+      <div className="w-11/12">
         <div className="text-center pb-8">
           <p className="text-lg font-semibold py-1">
             <span className="pl-12 pr-2 bg-[#FF9933]">Tour</span>Types
           </p>
-          <p className="text-3xl lg:text-4xl font-bold py-1">
+          <p className="palanquin-dark-medium text-[#222222] text-3xl lg:text-4xl font-bold py-1">
           Find Adventure in Life
           </p>
         </div>

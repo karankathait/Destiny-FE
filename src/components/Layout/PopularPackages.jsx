@@ -49,12 +49,12 @@ const PopularPackages = () => {
 
   return (
     <div className="w-full flex justify-center bg-slate-50 py-5 ">
-      <div className="w-10/12 text-center">
+      <div className="w-10/12 lg:w-11/12 text-center">
         <div>
-          <p className="text-lg font-semibold py-1">
+          <p className="text-lg text-[#222222] font-semibold py-1">
             <span className="pl-12 pr-2 bg-[#FF9933]">Popular</span>Packages
           </p>
-          <p className="text-3xl lg:text-4xl font-bold py-1">
+          <p className="palanquin-dark-medium text-[#222222] text-3xl lg:text-4xl font-bold py-1">
             The Best Of Our Packages
           </p>
         </div>
@@ -65,7 +65,7 @@ const PopularPackages = () => {
               <div
                 key={index}
                 data-aos={index % 2 === 0 ? "fade-up" : "fade-down"}
-                data-aos-once="true"
+                data-aos-once="false"
                 className="min-h-[500px] max-h-[500px]"
               >
                 <div className="relative">

@@ -23,9 +23,9 @@ const AboutUsPoster1 = () => {
 
   return (
     <div className="w-full flex justify-center py-12">
-      <div className="w-10/12 flex flex-col lg:flex-row gap-16">
+      <div className="w-10/12 lg:w-11/12 flex flex-col lg:flex-row gap-16">
         <div className="w-full lg:w-1/2 ">
-          <p className="text-lg font-semibold">
+          <p className="text-lg font-semibold pb-2">
             <span className="bg-[#FF9933] pl-4">About U</span>s
           </p>
           <h1 className=" text-3xl lg:text-4xl text-[#222222] font-extrabold">

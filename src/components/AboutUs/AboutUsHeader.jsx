@@ -4,7 +4,7 @@ import backgroundImage from "@/images/AboutUs/about-us-header-img.jpg";
 const AboutUsHeader = () => {
   return (
     <div
-      className="h-[45vh] bg-cover flex justify-center items-center"
+      className="h-[40vh] bg-cover flex justify-center items-center"
       style={{
         backgroundImage: `url(${backgroundImage.src})`,
       }}

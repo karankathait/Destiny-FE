@@ -76,7 +76,7 @@ const HomeScreen = () => {
                 <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
               </div>
               <div className="w-10/12 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white">
-                <h2 className="text-lg lg:text-3xl text-[#EFC03E] font-cursive font-semibold mb-4">
+                <h2 className="cedarville-cursive-regular text-lg lg:text-3xl text-[#EFC03E] font-cursive font-semibold mb-4">
                   {photo.title}
                 </h2>
                 <h1 className="text-3xl lg:text-6xl font-bold mb-5">
