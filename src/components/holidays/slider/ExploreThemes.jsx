@@ -3,63 +3,77 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import Image1 from "@/images/BestSellingImg/best-selling-1.jpg";
-import Image2 from "@/images/BestSellingImg/best-selling-2.jpg";
-import Image3 from "@/images/BestSellingImg/best-selling-3.jpg";
-import Image4 from "@/images/BestSellingImg/best-selling-4.jpg";
-import Image5 from "@/images/BestSellingImg/best-selling-5.png";
-import Image6 from "@/images/BestSellingImg/best-selling-6.jpg";
-import Image7 from "@/images/BestSellingImg/best-selling-7.jpg";
+import Image1 from "@/images/Themes/theme-1.jpg";
+import Image2 from "@/images/Themes/theme-2.jpg";
+import Image3 from "@/images/Themes/theme-3.jpg";
+import Image4 from "@/images/Themes/theme-4.jpg";
+import Image5 from "@/images/Themes/theme-5.jpg";
+import Image6 from "@/images/Themes/theme-6.jpg";
+import Image7 from "@/images/Themes/theme-7.jpg";
+import Image8 from "@/images/Themes/theme-8.jpg";
+import Image9 from "@/images/Themes/theme-9.jpg";
 import {
   MdKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
 
-const TopDestinationData = [
+const themes = [
   {
     id: 1,
     image: Image1,
-    location: "Kashmir",
-    country: "India",
+    name: "Summer",
+    TotalLocation: "60",
   },
   {
     id: 2,
     image: Image2,
-    location: "Mauritius",
-    country: "Majestic Mauritius",
+    name: "River",
+    TotalLocation: "60",
   },
   {
     id: 3,
     image: Image3,
-    location: "Europe",
-    country: "Europe",
+    name: "Weekend",
+    TotalLocation: "60",
   },
   {
     id: 4,
     image: Image4,
-    location: "North East",
-    country: "India",
+    name: "Honeymoon",
+    TotalLocation: "60",
   },
   {
     id: 5,
     image: Image5,
-    location: "Dubai",
-    country: "United Arab Emirates",
+    name: "Winter",
+    TotalLocation: "60",
   },
   {
     id: 6,
     image: Image6,
-    location: "Bhutan",
-    country: "Bhutan",
+    name: "Adventure",
+    TotalLocation: "60",
   },
   {
     id: 7,
     image: Image7,
-    location: "Bali",
-    country: "Indonesia",
+    name: "Beach",
+    TotalLocation: "60",
+  },
+  {
+    id: 8,
+    image: Image8,
+    name: "Camping",
+    TotalLocation: "60",
+  },
+  {
+    id: 9,
+    image: Image9,
+    name: "Rafting",
+    TotalLocation: "60",
   },
 ];
-const BestSellingPackages = () => {
+const ExploreThemes = () => {
   const sliderRef = useRef(null);
   const handleNext = (e) => {
     sliderRef.current.slickNext();
@@ -70,6 +84,7 @@ const BestSellingPackages = () => {
   };
 
   const settings = {
+    // dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 4,
@@ -79,32 +94,19 @@ const BestSellingPackages = () => {
     arrows: false,
     responsive: [
       {
-        breakpoint: 1024, // Adjust the breakpoint as needed (laptop screens)
+        breakpoint: 450, // Adjust the breakpoint as needed
         settings: {
-          slidesToShow: 4, // Number of slides to show on larger screens
-        },
-      },
-      {
-        breakpoint: 768, // Adjust the breakpoint as needed (tablet screens)
-        settings: {
-          slidesToShow: 2, // Number of slides to show on tablet screens
-        },
-      },
-      {
-        breakpoint: 480, // Adjust the breakpoint as needed (mobile screens)
-        settings: {
-          slidesToShow: 1, // Number of slides to show on mobile screens
+          slidesToShow: 1,
         },
       },
     ],
   };
-  
 
   return (
     <div className="w-full flex justify-center">
       <div className="w-11/12">
         <div className="w-full flex items-center justify-between pb-5">
-          <div className="text-xl font-bold">Best Selling packages</div>
+          <div className="text-xl font-bold">Explore Themes</div>
           <div className="bg-[#FF9933] text-xl rounded-full shadow-md">
             <button
               onClick={handlePrev}
@@ -122,14 +124,14 @@ const BestSellingPackages = () => {
         </div>
         <div className="relative">
           <Slider {...settings} ref={sliderRef}>
-            {TopDestinationData.map((TourType) => {
+            {themes.map((TourType) => {
               return (
                 <div key={TourType.id} className="px-2 cursor-pointer">
                   <div className="relative rounded-xl overflow-hidden">
                     <div className="w-full h-52">
                       <img
                         src={TourType.image.src}
-                        alt={`Slide ${TourType.title}`}
+                        alt={`Slide ${TourType.name}`}
                         className="w-full h-full object-cover hover:scale-105 duration-500"
                       />
                     </div>
@@ -137,9 +139,9 @@ const BestSellingPackages = () => {
                     {/* Light overlay */}
                     <div className="absolute bottom-4 w-full px-4">
                       <p className="text-white text-xl font-semibold">
-                        {TourType.location}
+                        {TourType.name}
                       </p>{" "}
-                      <p className="text-white">{TourType.country}</p>
+                      <p className="text-white">{TourType.TotalLocation} + Destinations</p>
                       {/* Centered location text */}
                     </div>
                   </div>
@@ -153,4 +155,4 @@ const BestSellingPackages = () => {
   );
 };
 
-export default BestSellingPackages;
+export default ExploreThemes;

@@ -5,6 +5,7 @@ import TestimonialsSlider from '@/components/Slider/TestimonialSlider'
 import DestinationCategory from '@/components/holidays/DestinationCategory/DestinationCategory'
 import TourCategory from '@/components/holidays/TourCategory/TourCategory'
 import BestSellingPackages from '@/components/holidays/slider/BestSellingPackages'
+import ExploreThemes from '@/components/holidays/slider/ExploreThemes'
 import HolidaysHeader from '@/components/holidays/slider/HolidaysHeader'
 import React from 'react'
 
@@ -17,6 +18,7 @@ const index = () => {
         <BestSellingPackages />
         <PackagesPosters />
         <DestinationCategory />
+        <ExploreThemes />
         <TestimonialsSlider />
         <Footer />  
     </div>

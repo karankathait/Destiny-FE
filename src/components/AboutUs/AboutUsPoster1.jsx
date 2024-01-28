@@ -23,17 +23,19 @@ const AboutUsPoster1 = () => {
 
   return (
     <div className="w-full flex justify-center py-12">
-      <div className="w-10/12 lg:w-11/12 flex flex-col lg:flex-row gap-16">
+      <div className="w-10/12 lg:w-10/12 flex flex-col lg:flex-row gap-16">
         <div className="w-full lg:w-1/2 ">
+          <div className="text-center lg:text-start">
           <p className="text-lg font-semibold pb-2">
             <span className="bg-[#FF9933] pl-4">About U</span>s
           </p>
-          <h1 className=" text-3xl lg:text-4xl text-[#222222] font-extrabold">
+          <h1 className=" text-2xl lg:text-4xl text-[#222222] font-extrabold">
             We are Professional
             <br /> Planners
             <br /> for your Vacations
           </h1>
-          <p className="py-7 text-lg text-slate-600">
+          </div>
+          <p className="text-center lg:text-start py-7 text-lg text-slate-600">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
             egestas, neque ut hendrerit egestas, lorem velit venenatis urna,
             vitae consequat enim purus tincidunt urna. Maecenas sollicitudin mi
@@ -79,12 +81,12 @@ const AboutUsPoster1 = () => {
         </div>
         <div className="w-full lg:w-1/2 relative">
           <img src={aboutUsImage.src} alt="" className="rounded-3xl"></img>
-          <div className="hidden  absolute bottom-28 -right-0 bg-[#63AB45] text-white w-24 lg:h-40 h-24 lg:w-40 rounded-2xl transform rotate-45 origin-bottom-right lg:flex items-center justify-center">
+          {/* <div className="hidden  absolute bottom-28 -right-0 bg-[#63AB45] text-white w-24 lg:h-40 h-24 lg:w-40 rounded-2xl transform rotate-45 origin-bottom-right lg:flex items-center justify-center">
             <div className="flex flex-col justify-center items-center transform -rotate-45 text-center">
                 <h1 className="text-lg lg:text-4xl font-bold">100+</h1>
                 <p className="text-">Successful <br></br>Trips</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

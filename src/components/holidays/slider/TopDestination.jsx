@@ -92,7 +92,7 @@ const TopDestination = () => {
       <Slider {...settings} ref={sliderRef}>
         {TopDestinationData.map((TourType) => {
           return (
-            <div key={TourType.id} className="px-2">
+            <div key={TourType.id} className="px-2 cursor-pointer">
               <div className="relative bg-red-300 rounded-xl overflow-hidden">
                 <div className="w-full h-80">
                   <img

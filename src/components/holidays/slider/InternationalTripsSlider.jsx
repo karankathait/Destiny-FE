@@ -16,7 +16,10 @@ import Image10 from "@/images/InternationalTrips/international-10.jpg";
 import Image11 from "@/images/InternationalTrips/international-11.jpg";
 import Image12 from "@/images/InternationalTrips/international-12.jpg";
 import Image13 from "@/images/InternationalTrips/international-13.jpg";
-import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from "react-icons/md";
+import {
+  MdKeyboardArrowLeft,
+  MdOutlineKeyboardArrowRight,
+} from "react-icons/md";
 
 const InternationalTripsData = [
   {
@@ -125,17 +128,16 @@ const InternationalTripsData = [
   },
 ];
 const InternationaltripsSlider = () => {
-const sliderRef = useRef(null);
-    const handleNext = (e) => {
-      sliderRef.current.slickNext();
-    };
-  
-    const handlePrev = (e) => {  
-      sliderRef.current.slickPrev();
-    };
+  const sliderRef = useRef(null);
+  const handleNext = (e) => {
+    sliderRef.current.slickNext();
+  };
+
+  const handlePrev = (e) => {
+    sliderRef.current.slickPrev();
+  };
 
   const settings = {
-    // dots: true,
     infinite: true,
     speed: 1000,
     slidesToShow: 4,
@@ -145,9 +147,21 @@ const sliderRef = useRef(null);
     arrows: false,
     responsive: [
       {
-        breakpoint: 450, // Adjust the breakpoint as needed
+        breakpoint: 1024, // Adjust the breakpoint as needed (laptop screens)
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 4, // Number of slides to show on larger screens
+        },
+      },
+      {
+        breakpoint: 768, // Adjust the breakpoint as needed (tablet screens)
+        settings: {
+          slidesToShow: 2, // Number of slides to show on tablet screens
+        },
+      },
+      {
+        breakpoint: 480, // Adjust the breakpoint as needed (mobile screens)
+        settings: {
+          slidesToShow: 1, // Number of slides to show on mobile screens
         },
       },
     ],
@@ -158,30 +172,43 @@ const sliderRef = useRef(null);
       <Slider {...settings} ref={sliderRef}>
         {InternationalTripsData.map((TourType) => {
           return (
-            <div key={TourType.id} className="px-2 ">
-              <div className="w-full h-44 object-cover">
-                <img
-                  src={TourType.image.src}
-                  alt={`Slide ${TourType.title}`}
-                  className="w-full h-full  rounded"
-                />
-                {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div> */}
-              </div>
-              <div className="bg-red-100 flex justify-between">
-                <h2 className="text-lg font-semibold">{TourType.location}</h2>
-                <h2 className="">
-                  Starting From
-                  <br />
-                  {TourType.price}
-                </h2>
+            <div key={TourType.id} className="px-2 cursor-pointer">
+              <div className="border overflow-hidden rounded-lg">
+                <div className="w-full h-48 object-cover overflow-hidden">
+                  <img
+                    src={TourType.image.src}
+                    alt={`Slide ${TourType.title}`}
+                    className="w-full h-full hover:scale-110 duration-700"
+                  />
+                  {/* <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div> */}
+                </div>
+                <div className="flex justify-between items-center p-4 bg-slate-100">
+                  <h2 className="text-lg font-semibold">{TourType.location}</h2>
+                  <h2 className="">
+                    <span className="text-sm text-slate-500">Starting From </span>
+                    <span className="text-xl font-semibold text-green-700">
+                      {TourType.price}
+                    </span>
+                  </h2>
+                </div>
               </div>
             </div>
           );
         })}
       </Slider>
       <div>
-        <button onClick={handlePrev} className="absolute bg-black bg-opacity-50 text-white p-1 lg:p-2 rounded-full top-20"><MdKeyboardArrowLeft /></button>
-        <button onClick={handleNext} className="absolute bg-black bg-opacity-50 text-white p-1 lg:p-2 rounded-full top-20 right-0"><MdOutlineKeyboardArrowRight /></button>
+        <button
+          onClick={handlePrev}
+          className="absolute bg-black bg-opacity-50 text-white p-1 lg:p-2 rounded-full top-28"
+        >
+          <MdKeyboardArrowLeft />
+        </button>
+        <button
+          onClick={handleNext}
+          className="absolute bg-black bg-opacity-50 text-white p-1 lg:p-2 rounded-full top-28 right-0"
+        >
+          <MdOutlineKeyboardArrowRight />
+        </button>
       </div>
     </div>
   );

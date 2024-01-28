@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import ScrollToTopButton from '@/components/Utility/ScrollToTop';
 import React, { useState, useEffect } from 'react';
 import Loading from '@/components/Loading'
+import OurTeam from '@/components/AboutUs/OurTeam';
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -35,6 +36,7 @@ const Index = () => {
           <AboutUsPoster1 />
           {/* <GetToKnowUs /> */}
           <AboutUsPoster2 />
+          <OurTeam />
           <ScrollToTopButton />
           <Footer />
         </>
