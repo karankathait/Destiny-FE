@@ -1,14 +1,10 @@
-import React, { useEffect, useState } from "react";
-import aboutUsImage from '@/images/AboutUs/About-us-img-1.jpg'
+import aboutUsImage from '@/images/AboutUs/about-us-img-1.jpg'
 import Tent from '@/images/AboutUs/tent.png'
 import Cycle from '@/images/AboutUs/bicycling.png'
 import Elephant from '@/images/AboutUs/elephants.png'
 import Couple from '@/images/AboutUs/couple.png'
 import Image from "next/image";
 const AboutUsPoster1 = () => {
-
-  const [count, setCount] = useState(1);
-  const endValue = 1000;
 
   // useEffect(() => {
   //   const interval = setInterval(() => {
@@ -82,12 +78,6 @@ const AboutUsPoster1 = () => {
         </div>
         <div className="w-full lg:w-1/2 relative">
           <Image width={500} height={500} src={aboutUsImage.src} alt="" className="rounded-3xl"></Image>
-          {/* <div className="hidden  absolute bottom-28 -right-0 bg-[#63AB45] text-white w-24 lg:h-40 h-24 lg:w-40 rounded-2xl transform rotate-45 origin-bottom-right lg:flex items-center justify-center">
-            <div className="flex flex-col justify-center items-center transform -rotate-45 text-center">
-                <h1 className="text-lg lg:text-4xl font-bold">100+</h1>
-                <p className="text-">Successful <br></br>Trips</p>
-            </div>
-          </div> */}
         </div>
       </div>
     </div>
