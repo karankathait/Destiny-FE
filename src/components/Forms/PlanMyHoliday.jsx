@@ -97,7 +97,7 @@ const PlanMyHolidayForm = () => {
               </div>
             </div>
 
-            <div className="text-center text-2xl font-normal text-[#F4364F] pb-6">We're a growing company</div>
+            <div className="text-center text-2xl font-normal text-[#F4364F] pb-6">We are a growing company</div>
             <div className="flex justify-evenly">
               <div className="text-center">
                 {/* <div><img src="https://www.tripclap.com/assets/admin/images/agent2a.png" alt="" /></div> */}

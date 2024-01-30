@@ -1,21 +1,21 @@
-import { useState } from "react";
+import React, { useState } from 'react';
 import { MenClothesData } from "@/components/DataFiles/MenClothesData";
 import Image from "next/image";
 const BuyNowOverlay = ({ productId, onClose }) => {
   const product = MenClothesData.find((item) => item.id === productId);
+  const [selectedSize, setSelectedSize] = useState(null); // Initialize selectedSize state
+  const [selectedColor, setSelectedColor] = useState(null);
 
   // Check if product exists
   if (!product) {
     return <div>No product found</div>;
   }
 
-  const [selectedSize, setSelectedSize] = useState(null); // Initialize selectedSize state
 
   const handleSizeChange = (sizeOption) => {
     setSelectedSize(sizeOption); // Update selectedSize state when a size option is selected
   };
 
-  const [selectedColor, setSelectedColor] = useState(null);
 
   const handleColorChange = (colorOption) => {
     setSelectedColor(colorOption);
