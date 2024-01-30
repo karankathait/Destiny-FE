@@ -1,6 +1,7 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
 import Profile from "@/images/profile.jpg";
+import Image from "next/image";
 const teamMembers = [
   {
     id: 1,
@@ -69,7 +70,7 @@ const OurTeam = () => {
             <span className="pl-12 pr-2 bg-[#FF9933]">Meet</span>Our Team
           </p>
         <p className="palanquin-dark-medium text-[#222222] text-2xl lg:text-4xl font-bold py-1">
-            "The Dream Makers<br /> Behind the Journey"
+            The Dream Makers<br /> Behind the Journey
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -79,16 +80,18 @@ const OurTeam = () => {
               className="bg-[#F1F1F1] p-5 w-full rounded-lg overflow-hidden"
             >
               <div className="w-full flex justify-center h- object-cover ">
-                <img
+                <Image
+                  width={200}
+                  height={200}
                   src={member.image.src}
                   alt={member.name}
-                  className="rounded-full h-40"
+                  className="rounded-full"
                 />
               </div>
               <div className="px-2 text-center">
                 <h2 className="text-2xl font-bold mb-2">{member.name}</h2>
                 <h2 className="text-sm font-bold mb-2 text-[#3C56F8]">{member.designation}</h2>
-                <p className="h-80 lg:h-56 font text-gray-600 cedarville-cursive-regular mb-4">"{member.quote}"</p>
+                <p className="h-80 lg:h-56 font text-gray-600 cedarville-cursive-regular mb-4">{member.quote}</p>
                 <div className="py-4 flex justify-center">
                   {member.socialMedia.map((social, index) => (
                 <a key={index} href={social.link} target="_blank" rel="noopener noreferrer" className="mr-4 text-[#3C56F8] hover:text-gray-800 transition duration-300">

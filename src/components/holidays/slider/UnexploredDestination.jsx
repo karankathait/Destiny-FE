@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 import Image1 from "@/images/UnexploredImg/unexplored-1.jpg";
 import Image2 from "@/images/UnexploredImg/unexplored-2.jpg";
 import Image3 from "@/images/UnexploredImg/unexplored-3.jpg";
@@ -26,42 +26,42 @@ const TopDestinationData = [
     location: "Egypt",
   },
   {
-    id: 1,
+    id: 3,
     image: Image3,
     location: "South Africa",
   },
   {
-    id: 1,
+    id: 4,
     image: Image4,
     location: "Vietnam",
   },
   {
-    id: 1,
+    id: 5,
     image: Image5,
     location: "Australia",
   },
   {
-    id: 1,
+    id: 6,
     image: Image1,
     location: "Kenya",
   },
   {
-    id: 2,
+    id: 7,
     image: Image2,
     location: "Egypt",
   },
   {
-    id: 1,
+    id: 8,
     image: Image3,
     location: "South Africa",
   },
   {
-    id: 1,
+    id: 9,
     image: Image4,
     location: "Vietnam",
   },
   {
-    id: 1,
+    id: 10,
     image: Image5,
     location: "Australia",
   },
@@ -111,8 +111,10 @@ const UnexploredDestination = () => {
             <div key={TourType.id} className="px-2 cursor-pointer">
               <div className="relative bg-red-300 rounded-xl overflow-hidden">
                 <div className="w-full h-80">
-                  <img
+                  <Image
                     src={TourType.image.src}
+                    width={400}
+                    height={700}
                     alt={`Slide ${TourType.title}`}
                     className="w-full h-full object-cover hover:scale-105 duration-500"
                   />

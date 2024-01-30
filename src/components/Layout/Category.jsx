@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 import img1 from '@/images/CategoryIcons/p-1.jpg';
 import img2 from '@/images/CategoryIcons/p-2.jpg';
 import img3 from '@/images/CategoryIcons/p-3.jpg';
@@ -25,8 +26,10 @@ const BrowseByCategory = () => {
             {toursData.map((tour, index) => (
                 <div key={index} className="rounded overflow-hidden">
                 <div className="h-20 w-20 mx-auto mt-4 bg-gray-300 rounded-full">
-                    <img
+                    <Image
                     src={tour.image.src}
+                    width={200}
+                    height={200}
                     alt={tour.title}
                     className="w-full h-full object-cover rounded-full"
                     />

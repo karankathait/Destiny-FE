@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaStar } from "react-icons/fa";
 import { TiArrowLeftThick, TiArrowRightThick } from "react-icons/ti";
-
+import Image from "next/image";
 import profile1 from "@/images/TestimonialImg/profile-pic-1.jpg";
 import profile2 from "@/images/TestimonialImg/profile-pic-2.jpg";
 import profile3 from "@/images/TestimonialImg/profile-pic-3.jpg";
@@ -116,8 +116,10 @@ const TestimonialsSlider = () => {
               return (
                 <div key={testimonial.id} className="py-4">
                   <div className="flex justify-center relative">
-                    <img
+                    <Image
                       src={testimonial.image.src}
+                      width={300}
+                      height={300}
                       className="w-36 rounded-full"
                       alt={`Testimonial ${testimonial.id}`}
                     />

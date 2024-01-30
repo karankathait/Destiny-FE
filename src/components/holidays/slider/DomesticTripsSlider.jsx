@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 import Image1 from "@/images/DomesticTripsImg/domestic-1.jpg";
 import Image2 from "@/images/DomesticTripsImg/domestic-2.jpg";
 import Image3 from "@/images/DomesticTripsImg/domestic-3.jpg";
@@ -27,7 +27,7 @@ const DomesticTripsData = [
     price: "12,999",
   },
   {
-    id: 1,
+    id: 2,
     location: "Rishikesh",
     image: Image2,
     days: 5,
@@ -35,7 +35,7 @@ const DomesticTripsData = [
     price: "12,999",
   },
   {
-    id: 1,
+    id: 3,
     location: "Rishikesh",
     image: Image3,
     days: 5,
@@ -43,7 +43,7 @@ const DomesticTripsData = [
     price: "12,999",
   },
   {
-    id: 1,
+    id: 4,
     location: "Rishikesh",
     image: Image4,
     days: 5,
@@ -51,7 +51,7 @@ const DomesticTripsData = [
     price: "12,999",
   },
   {
-    id: 1,
+    id: 5,
     location: "Rishikesh",
     image: Image5,
     days: 5,
@@ -59,7 +59,7 @@ const DomesticTripsData = [
     price: "12,999",
   },
   {
-    id: 1,
+    id: 6,
     location: "Rishikesh",
     image: Image6,
     days: 5,
@@ -67,7 +67,7 @@ const DomesticTripsData = [
     price: "12,999",
   },
   {
-    id: 1,
+    id: 7,
     location: "Rishikesh",
     image: Image7,
     days: 5,
@@ -75,7 +75,7 @@ const DomesticTripsData = [
     price: "12,999",
   },
   {
-    id: 1,
+    id: 8,
     location: "Rishikesh",
     image: Image8,
     days: 5,
@@ -83,7 +83,7 @@ const DomesticTripsData = [
     price: "12,999",
   },
   {
-    id: 1,
+    id: 9,
     location: "Rishikesh",
     image: Image9,
     days: 5,
@@ -139,8 +139,10 @@ const DomesticTripsSlider = () => {
             <div key={TourType.id} className="px-2 cursor-pointer">
               <div className="border overflow-hidden rounded-lg">
                 <div className="w-full h-48 object-cover overflow-hidden">
-                  <img
+                  <Image
                     src={TourType.image.src}
+                    width={500}
+                    height={300}
                     alt={`Slide ${TourType.title}`}
                     className="w-full h-full hover:scale-110 duration-700"
                   />

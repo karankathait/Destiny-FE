@@ -1,5 +1,6 @@
-import Link from "next/link";
 import React, { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
 import profile from "@/images/profile.jpg";
 import { useRouter } from "next/router";
 // console.log("profile : ", profile);
@@ -195,9 +196,11 @@ const Navbar = () => {
                       aria-expanded={showProfile}
                       onClick={handleShowProfile}
                     >
-                      <img
-                        className="h-8 w-8 rounded-full"
+                      <Image
                         src={profile.src}
+                        width={50}
+                        height={50}
+                        className="h-8 w-8 rounded-full"
                         alt=""
                       />
                     </button>

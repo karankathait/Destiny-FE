@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 import Image1 from "@/images/InternationalTrips/international-1.jpg";
 import Image2 from "@/images/InternationalTrips/international-2.jpg";
 import Image3 from "@/images/InternationalTrips/international-3.jpg";
@@ -39,7 +39,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 3,
     image: Image3,
     location: "Singapore",
     price: "80,890",
@@ -47,7 +47,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 4,
     image: Image4,
     location: "Singapore",
     price: "80,890",
@@ -55,7 +55,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 5,
     image: Image5,
     location: "Singapore",
     price: "80,890",
@@ -63,7 +63,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 6,
     image: Image6,
     location: "Singapore",
     price: "80,890",
@@ -71,7 +71,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 7,
     image: Image7,
     location: "Singapore",
     price: "80,890",
@@ -79,7 +79,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 8,
     image: Image8,
     location: "Singapore",
     price: "80,890",
@@ -87,7 +87,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 9,
     image: Image9,
     location: "Singapore",
     price: "80,890",
@@ -95,7 +95,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 10,
     image: Image10,
     location: "Singapore",
     price: "80,890",
@@ -103,7 +103,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 11,
     image: Image11,
     location: "Singapore",
     price: "80,890",
@@ -111,7 +111,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 12,
     image: Image12,
     location: "Singapore",
     price: "80,890",
@@ -119,7 +119,7 @@ const InternationalTripsData = [
     nights: 6,
   },
   {
-    id: 1,
+    id: 12,
     image: Image13,
     location: "Singapore",
     price: "80,890",
@@ -175,8 +175,10 @@ const InternationaltripsSlider = () => {
             <div key={TourType.id} className="px-2 cursor-pointer">
               <div className="border overflow-hidden rounded-lg">
                 <div className="w-full h-48 object-cover overflow-hidden">
-                  <img
+                  <Image
                     src={TourType.image.src}
+                    width={500}
+                    height={300}
                     alt={`Slide ${TourType.title}`}
                     className="w-full h-full hover:scale-110 duration-700"
                   />

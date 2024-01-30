@@ -1,5 +1,6 @@
-import { MenClothesData } from "@/components/DataFiles/MenClothesData";
 import { useState } from "react";
+import { MenClothesData } from "@/components/DataFiles/MenClothesData";
+import Image from "next/image";
 const BuyNowOverlay = ({ productId, onClose }) => {
   const product = MenClothesData.find((item) => item.id === productId);
 
@@ -54,7 +55,9 @@ const BuyNowOverlay = ({ productId, onClose }) => {
 
                 <div className="grid w-full grid-cols-1 items-start gap-x-6 gap-y-8 sm:grid-cols-12 lg:gap-x-8">
                   <div className="aspect-h-3 aspect-w-2 overflow-hidden rounded-lg bg-gray-100 sm:col-span-4 lg:col-span-5 h-full">
-                    <img
+                    <Image
+                      width={900}
+                      height={900}
                       src={product.thumbnail.src}
                       alt="Two each of gray, white, and black shirts arranged on table."
                       className="object-cover object-center rounded"

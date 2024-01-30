@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 import image1 from "@/images/TourTypesImg/tour-type-1.jpg";
 import image2 from "@/images/TourTypesImg/tour-type-2.jpg";
 import image3 from "@/images/TourTypesImg/tour-type-3.jpg";
@@ -108,8 +108,10 @@ const TourTypesSlider = () => {
             return (
               <div key={TourType.id} className="px-2">
                 <div className="w-full">
-                  <img
+                  <Image
                     src={TourType.image.src}
+                    width={500}
+                    height={400}
                     alt={`Slide ${TourType.title}`}
                     className="w-full h-full object-cover rounded"
                   />

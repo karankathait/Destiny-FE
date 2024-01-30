@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 import image1 from "@/images/HomePageImg/homescreen-img-1.jpg";
 import image2 from "@/images/HomePageImg/homescreen-img-2.jpg";
 import image3 from "@/images/HomePageImg/homescreen-img-3.jpg";
@@ -68,8 +68,10 @@ const HomeScreen = () => {
           return (
             <div key={photo.id} className="relative w-full h-full">
               <div className="w-full h-[100vh] relative">
-                <img
+                <Image
                   src={photo.image.src}
+                  width={1200}
+                  height={700}
                   alt={`Slide ${photo.id}`}
                   className="w-full h-full object-cover"
                 />

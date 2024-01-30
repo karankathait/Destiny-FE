@@ -4,6 +4,7 @@ import { FaTent } from "react-icons/fa6";
 import { FaPersonWalkingLuggage } from "react-icons/fa6";
 import { LuMessagesSquare } from "react-icons/lu";
 import { IoPeopleSharp } from "react-icons/io5";
+import Image from "next/image";
 
 const GetToKnowUs = () => {
   return (
@@ -68,7 +69,9 @@ const GetToKnowUs = () => {
         </div>
         <div className="hidden lg:block lg:w-2/5 relative">
           <div className="hidden lg:block bg-[#63AB45] w-full h-full rounded-tl-3xl rounded-bl-[100px]"></div>
-          <img
+          <Image
+            width={600}
+            height={600}
             src={BackgrondImage.src}
             alt="why-to-choose-us"
             className="absolute top-20 right-16 border-white border-4 rounded-xl shadow-lg"

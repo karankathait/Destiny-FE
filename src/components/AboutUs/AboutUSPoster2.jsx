@@ -4,6 +4,7 @@ import image2 from "@/images/AboutUs/about-2-img-2.jpg";
 import image3 from "@/images/AboutUs/about-2-img-3.jpg";
 import { ImEarth } from "react-icons/im";
 import { FaBoxes } from "react-icons/fa";
+import Image from "next/image";
 
 const AboutUsPoster2 = () => {
   return (
@@ -18,7 +19,7 @@ const AboutUsPoster2 = () => {
             Planning a trip should be very exciting adventure
           </h1>
           <p className="py-6 text-lg text-slate-500">
-            We're dedicated to offering exceptional value for your travel
+            We are dedicated to offering exceptional value for your travel
             investment. Our relationships with trusted travel partners
           </p>
          </div>
@@ -52,23 +53,29 @@ const AboutUsPoster2 = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 flex items-center gap-3">
-          <div className="overflow-hidden rounded-3xl">
-            <img
+          <div className="overflow-hidden rounded-3xl object-cover">
+            <Image
+              width={500}
+              height={550}
               src={image1.src}
               alt=""
-              className="rounded-3xl hover:scale-105 duration-500"
+              className="rounded-3xl hover:scale-105 duration-500 "
             />
           </div>
           <div className="flex flex-col gap-3">
             <div className="overflow-hidden rounded-3xl">
-              <img
+              <Image
+                width={500}
+                height={500}
                 src={image2.src}
                 alt=""
                 className="rounded-3xl hover:scale-105 duration-500"
               />
             </div>
             <div className="overflow-hidden rounded-3xl">
-              <img
+              <Image
+                width={200}
+                height={200}
                 src={image3.src}
                 alt=""
                 className="rounded-3xl hover:scale-105 duratio500"

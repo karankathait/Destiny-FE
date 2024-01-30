@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 import Image1 from "@/images/BestSellingImg/best-selling-1.jpg";
 import Image2 from "@/images/BestSellingImg/best-selling-2.jpg";
 import Image3 from "@/images/BestSellingImg/best-selling-3.jpg";
@@ -127,8 +127,10 @@ const BestSellingPackages = () => {
                 <div key={TourType.id} className="px-2 cursor-pointer">
                   <div className="relative rounded-xl overflow-hidden">
                     <div className="w-full h-52">
-                      <img
+                      <Image
                         src={TourType.image.src}
+                        width={500}
+                        height={300}
                         alt={`Slide ${TourType.title}`}
                         className="w-full h-full object-cover hover:scale-105 duration-500"
                       />

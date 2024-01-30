@@ -58,11 +58,11 @@ const PlanMyHolidayForm = () => {
             <div className="p-6">
               <div className="flex items-center gap-4 pb-4">
                 <div>
-                  <img
+                  {/* <img
                     src="https://www.tripclap.com/assets/admin/images/3.png"
                     alt=""
                     className="w-10"
-                  />
+                  /> */}
                 </div>
                 <div>
                   <h1>Select your tour</h1>
@@ -71,11 +71,11 @@ const PlanMyHolidayForm = () => {
               </div>
               <div className="flex items-center gap-4 pb-4">
                 <div>
-                  <img
+                  {/* <img
                     src="https://www.tripclap.com/assets/admin/images/2.png"
                     alt=""
                     className="w-10"
-                  />
+                  /> */}
                 </div>
                 <div>
                   <h1>Get Multiple Free Quotes</h1>
@@ -84,11 +84,11 @@ const PlanMyHolidayForm = () => {
               </div>
               <div className="flex items-center gap-4 pb-4">
                 <div>
-                  <img
+                  {/* <img
                     src="https://www.tripclap.com/assets/admin/images/1.png"
                     alt=""
                     className="w-10"
-                  />
+                  /> */}
                 </div>
                 <div>
                   <h1>Customize & Book</h1>
@@ -100,17 +100,17 @@ const PlanMyHolidayForm = () => {
             <div className="text-center text-2xl font-normal text-[#F4364F] pb-6">We're a growing company</div>
             <div className="flex justify-evenly">
               <div className="text-center">
-                <div><img src="https://www.tripclap.com/assets/admin/images/agent2a.png" alt="" /></div>
+                {/* <div><img src="https://www.tripclap.com/assets/admin/images/agent2a.png" alt="" /></div> */}
                 <h1 className="font-medium">750+</h1>
                 <h1 className="">Tours</h1>
               </div>
               <div className="text-center">
-                <div><img src="https://www.tripclap.com/assets/admin/images/traveler1.png" alt="" /></div>
+                {/* <div><img src="https://www.tripclap.com/assets/admin/images/traveler1.png" alt="" /></div> */}
                 <h1 className="font-medium">750+</h1>
                 <h1 className="">Tours</h1>
               </div>
               <div className="text-center">
-                <div><img src="https://www.tripclap.com/assets/admin/images/places1.png" alt="" /></div>
+                {/* <div><img src="https://www.tripclap.com/assets/admin/images/places1.png" alt="" /></div> */}
                 <h1 className="font-medium">750+</h1>
                 <h1 className="">Tours</h1>
               </div>
@@ -120,7 +120,7 @@ const PlanMyHolidayForm = () => {
             </div>
             <div className="text-center">
               <h1 className="flex items-center justify-center text-sm gap-2 py-2">
-                <span><img src="https://www.tripclap.com/assets/admin/images/call.png" alt="" className="w-4"/></span> Call Us for details
+                {/* <span><img src="https://www.tripclap.com/assets/admin/images/call.png" alt="" className="w-4"/></span> Call Us for details */}
               </h1>
               <h1 className="text-3xl text-[#F4364F]">122 453 637</h1>
             </div>
@@ -128,10 +128,10 @@ const PlanMyHolidayForm = () => {
           <div className="w-full lg:w-3/5 p-8">
             <div className="text-center">
               <div className="flex justify-center">
-                <img
+                {/* <img
                   src="https://tcsg.in/assets/images/homecards/places_new.png"
                   alt=""
-                />
+                /> */}
               </div>
               <div className="text-[#F4364F] text-xl">
                 Where do you want to go?

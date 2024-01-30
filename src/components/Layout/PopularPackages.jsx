@@ -4,7 +4,7 @@ import { MdAccessTime } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import Image from "next/image";
 import Package1 from "@/images/PopularPackagesImg/package1.jpg";
 import Package2 from "@/images/PopularPackagesImg/package2.jpg";
 import Package3 from "@/images/PopularPackagesImg/package3.jpg";
@@ -74,8 +74,10 @@ const PopularPackages = () => {
                     {packageItem.price}
                   </p>
                   <div>
-                    <img
+                    <Image
                       src={packageItem.image.src}
+                      width={500}
+                      height={700}
                       alt={packageItem.title}
                       className="rounded-md"
                     />

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { TiArrowLeftThick, TiArrowRightThick } from "react-icons/ti";
-
+import Image from "next/image";
 import destinationImage1 from "@/images/PopularDestinationImg/popular-destination-img-1.jpg";
 import destinationImage2 from "@/images/PopularDestinationImg/popular-destination-img-2.jpg";
 import destinationImage3 from "@/images/PopularDestinationImg/popular-destination-img-3.jpg";
@@ -123,8 +123,10 @@ const PopularDestination = () => {
                   className="rounded overflow-hidden min-h-[480px] max-h-[520px] shadow-sm bg-white px-2"
                 >
                   <div className="relative">
-                    <img
+                    <Image
                       src={data.image.src}
+                      width={500}
+                      height={800}
                       className=""
                       alt={`popular destination ${data.title}`}
                     />

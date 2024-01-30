@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 import Image1 from "@/images/Themes/theme-1.jpg";
 import Image2 from "@/images/Themes/theme-2.jpg";
 import Image3 from "@/images/Themes/theme-3.jpg";
@@ -129,8 +129,10 @@ const ExploreThemes = () => {
                 <div key={TourType.id} className="px-2 cursor-pointer">
                   <div className="relative rounded-xl overflow-hidden">
                     <div className="w-full h-52">
-                      <img
+                      <Image
                         src={TourType.image.src}
+                        width={500}
+                        height={300}
                         alt={`Slide ${TourType.name}`}
                         className="w-full h-full object-cover hover:scale-105 duration-500"
                       />

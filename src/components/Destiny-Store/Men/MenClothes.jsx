@@ -1,6 +1,7 @@
-import { MenClothesData } from "@/components/DataFiles/MenClothesData";
 import { useState } from "react";
+import { MenClothesData } from "@/components/DataFiles/MenClothesData";
 import BuyNowOverlay from "../BuyNowOverlay";
+import Image from "next/image";
 import Link from "next/link";
 const MenClothes = () => {
   const [isOverlayOpen, setIsOverlayOpen] = useState(false); // State to track overlay open/close
@@ -30,7 +31,9 @@ const MenClothes = () => {
             return (
               <div key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none  lg:h-80">
-                  <img
+                  <Image
+                    width={900}
+                    height={900}
                     src={product.thumbnail.src}
                     alt="Front of men&#039;s Basic Tee in black."
                     className="h-full w-full hover:scale-110 duration-500 object-cover object-center lg:h-full lg:w-full"

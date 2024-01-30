@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-
+import Image from 'next/image';
 const Index = () => {
 
     const[createOverlay,setCreateOverlay] = useState(false)
@@ -72,7 +72,7 @@ const handleDeletePackage = async (id) => {
             <p>Price: ${pkg.price}</p>
             <p>Rating: {pkg.rating}</p>
             <p>Duration: {pkg.days} days / {pkg.nights} nights</p>
-            <img src={pkg.thumbnail} alt={pkg.title} />
+            <Image src={pkg.thumbnail} width={500} height={300} alt={pkg.title} />
             <button
               onClick={() => handleDeletePackage(pkg.id)}
               className='border py-3 px-9 bg-red-500 text-white'

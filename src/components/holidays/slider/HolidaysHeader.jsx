@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 import { TiArrowLeftThick, TiArrowRightThick } from "react-icons/ti";
 import Image1 from "@/images/HolidayPosterImg/holiday-poster-1.png";
 import Image2 from "@/images/HolidayPosterImg/holiday-poster-2.png";
@@ -89,8 +89,10 @@ const HolidaysHeader = () => {
                 key={index}
                 className="relative w-full h-72 md:h-auto flex items-center justify-center"
               >
-                <img
+                <Image
                   src={imageUrl.image.src}
+                  width={1300}
+                  height={500}
                   alt={`Image ${index + 1}`}
                   className="w-full h-full object-cover"
                 />

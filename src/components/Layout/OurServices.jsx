@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import image1 from '@/images/OurServicesIcon/double-bed.png'
 import image2 from '@/images/OurServicesIcon/fast-food.png'
 import image3 from '@/images/OurServicesIcon/parachute.png'
@@ -76,9 +77,11 @@ const OurServices = () => {
                         <div  key={item.id} className='pt-1 bg-[#63AB45] rounded-lg'>
                         <div className="py-10 h-[400px] bg-white overflow-hidden rounded-lg shadow-lg">
                           <div className='w-full h-24 object-cover flex justify-center items-center'>
-                            <img
-                                className="h-16 w-16"
+                            <Image
                                 src={item.image.src}
+                                width={200}
+                                height={200}
+                                className="h-16 w-16"
                                 alt={item.title}
                             />
                           </div>

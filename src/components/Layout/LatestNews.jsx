@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import Image from "next/image";
 import image1 from "@/images/LatestNewsImg/latest-news-img-1.jpg";
 import image2 from "@/images/LatestNewsImg/latest-news-img-2.jpg";
 import image3 from "@/images/LatestNewsImg/latest-news-img-3.jpg";
@@ -77,10 +77,12 @@ const LatestNews = () => {
                 className="bg-white p-8 rounded-lg overflow-hidden shadow-lg"
               >
                 <div className="relative">
-                  <img
-                    className="w-full h- rounded-lg object-cover"
+                  <Image
                     src={blog.image.src}
+                    width={500}
+                    height={500}
                     alt={blog.title}
+                    className="w-full h- rounded-lg object-cover"
                   />
                   <button className="absolute -bottom-3 right-4 bg-[#63AB45] text-white text-lg font-medium px-5 rounded">
                     Travel

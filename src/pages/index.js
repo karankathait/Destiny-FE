@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
-import SingleProduct from '@/components/Destiny-Store/singleProduct'
 import PackagesPosters from '@/components/Posters/PackagePosters'
 import BrowseByCategory from '@/components/Layout/Category'
 import OurServices from '@/components/Layout/OurServices'

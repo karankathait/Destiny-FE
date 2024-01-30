@@ -4,6 +4,7 @@ import Tent from '@/images/AboutUs/tent.png'
 import Cycle from '@/images/AboutUs/bicycling.png'
 import Elephant from '@/images/AboutUs/elephants.png'
 import Couple from '@/images/AboutUs/couple.png'
+import Image from "next/image";
 const AboutUsPoster1 = () => {
 
   const [count, setCount] = useState(1);
@@ -45,7 +46,7 @@ const AboutUsPoster1 = () => {
             <div className="bg-[#63AB45] pl-1 rounded-xl">
               <div className="text-slate-900 font-bold flex items-center gap-4 shadow-md py-4 bg-white rounded-xl w-full">
                 <span className="pl-4">
-                    <img src={Tent.src} alt="tent-camp" className="w-10"/>
+                    <Image width={50} height={50} src={Tent.src} alt="tent-camp" className="w-10"/>
                 </span>
                 <span className="">Tent Campaign</span>
               </div>
@@ -53,7 +54,7 @@ const AboutUsPoster1 = () => {
             <div className="bg-[#63AB45] pl-1 rounded-xl">
               <div className="text-slate-900 font-bold flex items-center gap-4 shadow-md py-4 bg-white rounded-xl w-full">
                 <span className="pl-4">
-                <img src={Cycle.src} alt="cycling" className="w-10"/>
+                <Image width={50} height={50} src={Cycle.src} alt="cycling" className="w-10"/>
                 </span>
                 <span className="">Mounting Biking</span>
               </div>
@@ -61,7 +62,7 @@ const AboutUsPoster1 = () => {
             <div className="bg-[#63AB45] pl-1 rounded-xl">
               <div className="text-slate-900 font-bold flex items-center gap-4 shadow-md py-4 bg-white rounded-xl w-full">
                 <span className="pl-4">
-                    <img src={Elephant.src} alt="wild-animal" className="w-10"/>
+                    <Image width={50} height={50} src={Elephant.src} alt="wild-animal" className="w-10"/>
                 </span>
                 <span className="">Wild Campaign</span>
               </div>
@@ -69,7 +70,7 @@ const AboutUsPoster1 = () => {
             <div className="bg-[#63AB45] pl-1 rounded-xl">
               <div className="text-slate-900 font-bold flex items-center gap-4 shadow-md py-4 bg-white rounded-xl w-full">
                 <span className="pl-4">
-                    <img src={Couple.src} alt="couples" className="w-10"/>
+                    <Image width={50} height={50} src={Couple.src} alt="couples" className="w-10"/>
                 </span>
                 <span className="">Couple Campaign</span>
               </div>
@@ -80,7 +81,7 @@ const AboutUsPoster1 = () => {
           </div>
         </div>
         <div className="w-full lg:w-1/2 relative">
-          <img src={aboutUsImage.src} alt="" className="rounded-3xl"></img>
+          <Image width={500} height={500} src={aboutUsImage.src} alt="" className="rounded-3xl"></Image>
           {/* <div className="hidden  absolute bottom-28 -right-0 bg-[#63AB45] text-white w-24 lg:h-40 h-24 lg:w-40 rounded-2xl transform rotate-45 origin-bottom-right lg:flex items-center justify-center">
             <div className="flex flex-col justify-center items-center transform -rotate-45 text-center">
                 <h1 className="text-lg lg:text-4xl font-bold">100+</h1>

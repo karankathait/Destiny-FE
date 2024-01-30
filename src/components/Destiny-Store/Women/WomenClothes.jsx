@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Image1 from "@/images/WomenClothesImg/women-clothes-1.jpg";
 import Image2 from "@/images/WomenClothesImg/women-clothes-3.jpg";
 import Image3 from "@/images/WomenClothesImg/women-clothes-2.jpg";
@@ -104,8 +105,10 @@ const WomenClothes = () => {
             return (
               <div key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-[600px]">
-                  <img
+                  <Image
                     src={product.thumbnail.src}
+                    width={1000}
+                    height={1000}
                     alt="Front of men&#039;s Basic Tee in black."
                     className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                   />

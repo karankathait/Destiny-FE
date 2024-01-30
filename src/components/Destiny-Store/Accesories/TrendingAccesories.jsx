@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import Image1 from '@/images/AccessoriesImg/accessories-1.jpg'
 import Image2 from '@/images/AccessoriesImg/accessories-2.jpg'
 import Image3 from '@/images/AccessoriesImg/accessories-3.jpg'
@@ -41,7 +42,7 @@ const TrendingAccesories = () => {
         <h2 className="text-2xl font-bold tracking-tight text-gray-900">
           Trending Products
         </h2>
-        <p className="text-indigo-600 font-semibold">Browse all favorites →</p>
+        {/* <p className="text-indigo-600 font-semibold">Browse all favorites →</p> */}
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
@@ -49,7 +50,9 @@ const TrendingAccesories = () => {
             return (
               <div key={product.id} className="group relative">
                 <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                  <img
+                  <Image
+                    width={300}
+                    height={300}
                     src={product.image.src}
                     alt="Front of men&#039;s Basic Tee in black."
                     className="h-full w-full object-cover object-center lg:h-full lg:w-full"

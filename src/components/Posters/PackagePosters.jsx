@@ -2,7 +2,7 @@ import React, {useRef} from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Image from "next/image";
 import poster1 from "@/images/DestinationPoster/poster-1.png";
 import poster2 from "@/images/DestinationPoster/poster-2.png";
 import poster3 from "@/images/DestinationPoster/poster-3.png";
@@ -62,8 +62,10 @@ const PackagesPosters = () => {
         // console.log(imageUrl); // Log the imageUrl
         return (
             <div key={index} className="w-full h-72 md:h-auto flex items-center justify-center">
-            <img
+            <Image
                 src={imageUrl.src}
+                width={1300}
+                height={400}
                 alt={`Image ${index + 1}`}
                 className="w-full h-full object-cover rounded-lg"
             />
