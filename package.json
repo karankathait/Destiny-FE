@@ -12,6 +12,7 @@
     "aos": "^2.3.4",
     "axios": "^1.6.5",
     "formik": "^2.4.5",
+    "gh-pages": "^6.1.1",
     "json-server": "^1.0.0-alpha.16",
     "next": "14.0.4",
     "react": "^18",
